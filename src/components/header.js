@@ -124,21 +124,21 @@ const NavLinkEnd = styled.a `
 `
 
 const NavDropdownLink = styled.a `
-  font-family: asado-regular;
-  font-size: 1.5rem;
-  color: #ffffff;
+  font-family: asado-regular !important;
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 
   :hover {
     color: #ffffff !important;
     background-color: transparent !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
   
   @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-    padding: 8px;
+    font-size: 2rem !important;
+    padding: 8px !important;
   }
   @media only screen and (max-width: 1023px) {
     padding-left: 0.8rem;
