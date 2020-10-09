@@ -1,0 +1,87 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+
+@font-face {
+  font-family: "asado-regular";
+  src: url("../fonts/asado-regular-text.otf");
+}
+
+@font-face {
+  font-family: "asado-bold";
+  src: url("../fonts/asado-bold-text.otf");
+}
+
+@font-face {
+  font-family: "asado-body";
+  src: url("../fonts/asado-body-text.ttf");
+}
+
+.asado-regular-nav {
+  font-family: asado-regular;
+  font-size: 1.2rem;
+}
+.asado-regular-nav:hover {
+  text-decoration: underline;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+.navbar-dropdown {
+  
+}
+
+.center-text {
+  text-align: center;
+}
+.dark-scrollbar {
+  scrollbar-color: dark;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav-dropdown-container {
+    padding-top: 0.4rem !important;
+    margin-bottom: -0.6rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar-dropdown {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/*
+
+$navbar-background-color: transparent;
+$navbar-item-color: #ffffff;
+$navbar-item-active-color: #ffffff;
+$navbar-tab-active-color: #ffffff;
+$navbar-burger-color: #ffffff;
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 7rem;
+$body-overflow-y: auto;
+$navbar-dropdown-item-hover-color: #ffffff;
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-dropdown-border-top: none;
+$navbar-dropdown-background-color: rgba(0, 0, 0, 0.5); 
+
+Asado Colours
+
+Green - #024443
+Gold - #fcb632
+Dark Blue - #02223b
+
+*/
+$body-overflow-y: auto;
+$navbar-background-color: #024443;
+$navbar-burger-color: #ffffff;
+$navbar-item-color: #ffffff;
+$navbar-dropdown-background-color: #fcb632; 
+$navbar-dropdown-border-top: none;
+$navbar-height: 8rem;
+
+// Import Bulma core
+@import "~bulma/bulma.sass";
+
+
+

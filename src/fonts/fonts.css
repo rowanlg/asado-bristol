@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "asado-regular";
+  src: url("/static/fonts/asado-regular-text.otf");
+}
+
+@font-face {
+  font-family: "asado-bold";
+  src: url("/static/fonts/asado-bold-text.otf");
+}
+
+@font-face {
+  font-family: "asado-body";
+  src: url("/static/fonts/asado-body-text.ttf");
+}
