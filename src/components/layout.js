@@ -1,5 +1,5 @@
 import React from "react"
-import "../pages/mystyles.scss"
+import "../styles/mystyles.scss"
 import styled from "styled-components"
 import Header from "./header"
 import ImageSliderHero from "./imagesliderhero"

@@ -1,165 +1,25 @@
 import React from "react"
-import "../pages/mystyles.scss"
+import "../styles/mystyles.scss"
+import "../styles/header.scss"
 import styled from "styled-components"
 import asadoLogo from "../images/asado-logo.png"
 
-const NavContainer = styled.div `
-  height: 20%;
-`
 
-const NavMain = styled.nav `
-  height: 70%;
-  
-`
-
-const NavImageContainer = styled.a `
-  position: fixed;
-  left: 50%;
-  top: 1.5rem;
-  margin-left: -3rem;
-  width: 6rem;
-`
-
-const NavImage = styled.img `
-  width: auto;
-`
-
-const Burger = styled.a `
-
-  :hover {
-    background-color: transparent;
-    color: white !important;
-  }
-  span {
-    width: 20px;
-    height: 2px;
-  }
-`
-
-const NavLinks = styled.div `
-  padding-top: 2rem;
-  
-  @media only screen and (max-width: 1023px) {
-    background-color: #fcb632;
-    a {color: #02223b;}
-    a:hover {color: #024443 !important;}
-  }
-`
-
-const FlexCont = styled.div `
-height: 100%;
-
-@media only screen and (max-width: 1023px) {
-  width: auto;
-}
-@media only screen and (min-width: 1024px) {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}  
-`
-
-const StartEndDefineLeft = styled.div `
-  margin-bottom: 1.3rem;
-  width: 30%;
-  height: 100%;
-  
-  @media only screen and (min-width: 1024px) {
-    margin-left: 12%;
-  }
-`
-
-const NavLinkStart = styled.a `
-  font-family: asado-regular;
-  font-size: 1.5rem;
-  color: #ffffff;
-
-  :hover {
-    color: #ffffff !important;
-    background-color: transparent !important;
-    text-decoration: underline;
-  }
-
-  :focus {
-    color: #ffffff !important;
-    background-color: transparent !important;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-  }
-`
-
-const StartEndDefineRight = styled.div `
-  margin-bottom: 1.3rem;
-  width: 30%;
-  height: 100%;
-
-  @media only screen and (max-width: 1023px) {
-    margin-top: -2.2rem;
-  }
-  @media only screen and (min-width: 1024px) {
-    margin-right: 12%;
-  }
-`
-
-const NavLinkEnd = styled.a `
-  font-family: asado-regular;
-  font-size: 1.5rem;
-  color: #ffffff;
-
-  :hover {
-    color: #ffffff !important;
-    background-color: transparent !important;
-    text-decoration: underline;
-  }
-  :focus {
-    color: #ffffff !important;
-    background-color: transparent !important;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-  }
-`
-
-const NavDropdownLink = styled.a `
-  font-family: asado-regular;
-  font-size: 1.5rem;
-  color: #ffffff;
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-
-  :hover {
-    color: #ffffff !important;
-    background-color: transparent !important;
-    text-decoration: underline;
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-    padding: 8px;
-  }
-  @media only screen and (max-width: 1023px) {
-    padding-left: 0.8rem;
-  }
-  
-`
 
 const Header = () => {
   const [isActive, setisActive] = React.useState(false)
   return (
-    <NavContainer>
-      <NavMain className='navbar' role='navigation' aria-label='main navigation'>
+    <div className='nav-container'>
+      <div className='navbar nav-main' role='navigation' aria-label='main navigation'>
         <nav className='navbar-brand'>
           <a href='/' className='navbar-item'>
           </a>
-          <Burger
+          <a
             onClick={() => {
               setisActive(!isActive)
             }}
             role='button'
-            className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
+            className={`navbar-burger burger  nav-burger ${isActive ? 'is-active' : ''}`}
             aria-label='menu'
             aria-expanded='false'
             data-target='navbarBasicExample'
@@ -167,37 +27,37 @@ const Header = () => {
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
-          </Burger>
+          </a>
 
-          <NavImageContainer href='/'>
-            <NavImage
+          <a className='nav-image-container' href='/'>
+            <img
             src={asadoLogo} 
             />
-          </NavImageContainer>
+          </a>
 
         </nav>
 
-      <NavLinks id='navbarBasicExample' className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-        <StartEndDefineLeft className='navbar-start'>
-          <FlexCont className='navbar-item'>
+      <div id='navbarBasicExample nav-links' className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+        <div className='navbar-start start-end-define-left'>
+          <div className='navbar-item flex-cont'>
 
-          <NavLinkStart href='#menu' className='navbar-item'>            
+          <a href='#menu' className='navbar-item nav-link-start'>            
                 Menu
-            </NavLinkStart>
+            </a>
 
-            <NavLinkStart href='#about' className='navbar-item'>
+            <a href='#about' className='navbar-item nav-link-start'>
               About
-            </NavLinkStart>
-          </FlexCont>
-        </StartEndDefineLeft>
-        <StartEndDefineRight className='navbar-end'>
+            </a>
+          </div>
+        </div>
+        <div className='navbar-end start-end-define-right'>
 
-          <FlexCont className='navbar-item'>
+          <div className='navbar-item flex-cont'>
 
             <div class="navbar-item has-dropdown is-hoverable nav-dropdown-container">
-                <NavDropdownLink class="navbar-link">
+                <a class="navbar-link nav-dropdown-link">
                   Order
-                </NavDropdownLink>
+                </a>
                 <div class="navbar-dropdown">
                   <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" class="navbar-item asado-regular-nav">
                     Click and Collect
@@ -211,18 +71,18 @@ const Header = () => {
                 </div>
               </div>
   
-            <NavLinkEnd href="#contact" className='navbar-item'>
+            <a href="#contact" className='navbar-item nav-link-end'>
               Contact
-            </NavLinkEnd>
-          </FlexCont>
-        </StartEndDefineRight>
-      </NavLinks>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    </NavMain>
+    </div>
   
 
    
-  </NavContainer>
+  </div>
     
 
   )
