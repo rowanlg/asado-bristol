@@ -26,7 +26,7 @@ const Header = () => {
             <span aria-hidden='true'></span>
           </a>
 
-          <Link className='nav-image-container' to='/#top-of-page'>
+          <Link className='nav-image-container' to='/'>
             <img
             src={asadoLogo} 
             alt="asado logo"
@@ -78,7 +78,7 @@ const Header = () => {
       </div>
 
     </div>
-    <div className="color-strip-gold-header-announcement-bar"><h3>- This is an announcement -</h3></div>
+    <div className="color-strip-gold-header-announcement-bar"><h3>- Half price off with Uber code: UBEREATS50 -</h3></div>
     </div>
   )
 }
