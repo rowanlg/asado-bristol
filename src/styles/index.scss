@@ -14,36 +14,219 @@
   src: url("../fonts/asado-body-text.ttf");
 }
 
-.color-strip {
+.master-wrapper {
+  scroll-margin-top: -10000rem;
+}
+
+.color-strip-gold-layout {
+  width: 100vw;
+  height: 15vh;
+  background-color: #fcb632;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 8rem;
+  
+  h2 {
+    font-family: asado-bold;
+    color: #fffaf1;
+    text-align: center;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+    margin-right: 3%;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1.6rem;
+      padding-top: 1.3rem;
+    }
+    @media only screen and (min-width: 401px) {
+      font-size: 2rem;
+      padding-top: 1.6rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 3rem;
+      padding-top: 2.2rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 3.5rem;
+    padding-top: 2.6rem;
+    }
+    @media only screen and (min-width: 1297px) {
+      font-size: 4rem;
+    padding-top: 3rem;
+    }
+  }
+}
+
+.color-strip-green-layout {
   width: 100vw;
   height: 15vh;
   background-color: #024443;
+  text-align: center;
+  border-top: solid #fcb632;
 }
 
 .about-wrapper {
   width: 100vw;
   height: auto;
-  background-color: #fcb632;
+
+  background-color: #024443;
   display: flex;
   justify-content: center;
   align-items: center;
 
+
   div.text-box {
     width: 80%;
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
     h2 {
       font-family: asado-bold;
-      color: #024443;
+      color: #fffaf1;
       font-size: 3rem;
     }
     p {
       font-family: asado-body;
-      color: #024443;
-      font-size: 2rem;
+      color: #fffaf1;
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: 1297px) {
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: 1023px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 0.8rem;
+      }
     }
   }
 }
 
+.menu-section-wrapper {
+  background: linear-gradient(180deg, #000000 0%, #012322 80%, #024443 100%);
+  scroll-margin-top: 8rem;
+}
+
+.menu-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 5rem;
+      //text-shadow: 3px 2px 0px #fcb632;
+      margin-top: 10rem;
+  }
+}
+
+.menu-items-wrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .menu-items-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80%;
+    margin-bottom: 8rem;
+
+    @media only screen and (min-width: 1450px) {
+      width: 75%;
+    }
+  }
+
+  .menu-item-box {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+  }
+
+  .menu-text-box {
+    width: 30rem;
+    padding: 5%;
+    border: solid  rgba(255, 255, 255, 0.5) 2px;
+    -webkit-box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
+    box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
+    
+
+    h2 {
+      font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 3rem;
+      text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
+      margin-top: 1rem;
+      margin-bottom: -1.5rem;
+    }
+    h3 {
+      font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 2rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+    }
+    p {
+      font-family: asado-regular;
+      color: #fffaf1;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcb632;
+  scroll-margin-top: 8rem;
+}
+
+.contact-info-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+.contact-info-box {
+  width: 30rem;
+  padding: 5%;
+  margin: 5rem 0;
+
+  h2 {
+    font-family: asado-bold;
+    color: #fffaf1;
+    font-size: 3rem;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
+    margin-top: 1rem;
+    margin-bottom: -1.5rem;
+  }
+  h3 {
+    font-family: asado-bold;
+    color: #fffaf1;
+    font-size: 2rem;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+  }
+  p {
+    font-family: asado-regular;
+    color: #fffaf1;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+    
+  }
+}

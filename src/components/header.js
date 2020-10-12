@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "../styles/mystyles.scss"
 import "../styles/header.scss"
 import asadoLogo from "../images/asado-logo.png"
@@ -7,6 +8,7 @@ import asadoLogo from "../images/asado-logo.png"
 const Header = () => {
   const [isActive, setisActive] = React.useState(false)
   return (
+    <div>
       <div className='navbar is-fixed-top nav-main' role='navigation' aria-label='main navigation'>
         <nav className='navbar-brand'>
           <a
@@ -24,12 +26,12 @@ const Header = () => {
             <span aria-hidden='true'></span>
           </a>
 
-          <a className='nav-image-container' href='/'>
+          <Link className='nav-image-container' to='/#top-of-page'>
             <img
             src={asadoLogo} 
             alt="asado logo"
             />
-          </a>
+          </Link>
 
         </nav>
 
@@ -37,13 +39,13 @@ const Header = () => {
         <div className='navbar-start start-end-define-left'>
           <div className='navbar-item flex-cont'>
 
-          <a href='#about' className='navbar-item nav-link-start'>
+          <Link to='/#about' className='navbar-item nav-link-start'>
               About
-            </a>
+            </Link>
 
-          <a href='#menu' className='navbar-item nav-link-start'>            
+          <Link to='/#menu' className='navbar-item nav-link-start'>            
                 Menu
-            </a>
+            </Link>
 
           </div>
         </div>
@@ -52,7 +54,7 @@ const Header = () => {
           <div className='navbar-item flex-cont'>
 
             <div class="navbar-item has-dropdown is-hoverable nav-dropdown-container">
-                <a class="navbar-item nav-dropdown-link" id="order-menu-item">
+                <a class="navbar-item nav-dropdown-link">
                   Order
                 </a>
                 <div class="navbar-dropdown">
@@ -68,13 +70,15 @@ const Header = () => {
                 </div>
               </div>
   
-            <a href="#contact" className='navbar-item nav-link-end'>
+            <Link to="/#contact" className='navbar-item nav-link-end'>
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
+    </div>
+    <div className="color-strip-gold-header-announcement-bar"><h3>- This is an announcement -</h3></div>
     </div>
   )
 }

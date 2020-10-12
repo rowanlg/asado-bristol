@@ -13,20 +13,36 @@
   src: url("../fonts/asado-body-text.ttf");
 }
 
+.asado-regular-nav {
+  font-family: asado-regular;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+.asado-regular-nav:hover {
+  text-decoration: underline;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
 .nav-main {
     height: 8rem;
-    
+    border-bottom: solid #fcb632;
 }
 
 .nav-burger {
   &:hover {
     background-color: transparent;
-    color: white !important;
+    color: #fffaf1 !important;
   }
   span {
     width: 20px;
     height: 2px;
   }
+}
+
+.navbar-menu {
+  //border-top: solid #fcb632;
+  border-bottom: solid #fcb632;
 }
 
 .nav-image-container {
@@ -42,19 +58,6 @@
   }
 }
 
-#nav-links {
-  padding-top: 2rem;
-  @media only screen and (max-width: 1023px) {
-    background-color: #fcb632;
-    a {color: #02223b;}
-    a:hover {color: #024443 !important;}
-  }
-}
-
-.nav-brand {
-  padding-left: 0px !important;
-  border: solid white;
-}
 
 .start-end-define-left { 
   margin-bottom: 1.3rem;
@@ -64,26 +67,33 @@
   @media only screen and (min-width: 1024px) {
     margin-left: 12%;
   }
+  @media only screen and (max-width: 1023px) {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
 }
 
 .nav-link-start {
   font-family: asado-regular;
   font-size: 1.5rem;
-  color: #ffffff;
+  color:#fffaf1;
+  
 
   &:hover {
-    color: #ffffff !important;
+    color: #fffaf1 !important;
     background-color: transparent !important;
     text-decoration: underline;
   }
 
   &:focus {
-    color: #ffffff !important;
+    color: #fffaf1 !important;
     background-color: transparent !important;
   }
 
   @media only screen and (min-width: 1024px) {
     font-size: 2rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.2rem;
   }
 }
 
@@ -94,6 +104,7 @@
 
   @media only screen and (max-width: 1023px) {
     margin-top: -2.2rem;
+    margin-left: 1rem;
   }
   @media only screen and (min-width: 1024px) {
     margin-right: 12%;
@@ -103,28 +114,35 @@
 .nav-link-end {
   font-family: asado-regular;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #fffaf1;
+  
 
   &:hover {
-    color: #ffffff !important;
+    color: #fffaf1 !important;
     background-color: transparent !important;
     text-decoration: underline;
   }
   &:focus {
-    color: #ffffff !important;
+    color: #fffaf1 !important;
     background-color: transparent !important;
   }
 
   @media only screen and (min-width: 1024px) {
+    padding-top: 2.8rem;
+    padding-bottom: 2.2rem;
     font-size: 2rem;
+  }
+  @media only screen and (max-width: 1023px) {
+    margin-top: 0.5rem;
   }
 }
 
 .flex-cont {
   height: 100%;
+  padding: 0;
 
   @media only screen and (max-width: 1023px) {
-    width: auto;
+    width: 100%;
   }
   @media only screen and (min-width: 1024px) {
     width: 100%;
@@ -133,26 +151,25 @@
   }  
 }
 
-
 .nav-dropdown-link {
   font-family: asado-regular;
   font-size: 1.5rem;
-  color: #ffffff;
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  color: #fffaf1;
 
   &:hover {
-    color: #ffffff !important;
+    color: #fffaf1 !important;
     background-color: transparent !important;
     text-decoration: underline;
   }
   
   @media only screen and (min-width: 1024px) {
     font-size: 2rem;
-    padding: 8px;
+    padding-top: 2.8rem;
+    padding-bottom: 2.2rem;
   }
   @media only screen and (max-width: 1023px) {
     padding-left: 0.8rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -160,8 +177,9 @@
 .navbar-dropdown {
 
   @media only screen and (max-width: 1023px) {
-  padding-top: 0.4rem !important;
-  margin-bottom: -0.6rem;
+    padding-top: 0.4rem !important;
+    margin-bottom: -0.6rem;
+    width: 80vw;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -171,7 +189,13 @@
   }
 }
 
-#order-menu-item {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
+.color-strip-gold-header-announcement-bar {
+  margin-top: 8rem;
+  width: 100vw;
+  height: 2rem;
+  background-color: #fcb632;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

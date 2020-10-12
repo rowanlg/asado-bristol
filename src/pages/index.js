@@ -7,44 +7,106 @@ import SEO from "../components/seo"
 
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    
-    <div className="about-wrapper">
-      <div className="text-box">
+  <div className="master-wrapper" id="top-of-page">
+    <Layout>
+      <SEO title="Home" />
+      
+      <div className="color-strip-gold-layout" id="about">
         <h2>ASADO meaning barbecue in Spanish </h2>
-        <br />
-          <p>Cooking over a wood fired asado grill and using the highest quality, locally sourced ingredients.
-          <br />
-          At ASADO we are creating one of the tastiest burgers you have ever eaten using South American, Southern American and British flavours. We are open from 12pm to eat-in or takeaway.  
-          <br />
-          <br />
-          The beef in our burgers is, dry aged to perfection and made of our top secret mix. 
-          <br />
-          <br />
-          At ASADO we take into account the impact of eating meat has on the environment and the quality of life the animals have. Therefore we only work with farms and suppliers who have the same ethics as us to create meat dishes the way we believe they should be done. 
-          <br />
-          <br />
-          At ASADO we also take cheese very seriously, especially living so close to one the best cheese producing regions in the world! We use high quality, West Country produced cheese and not the plastic American style cheese that is so often used in burgers. 
-          <br />
-          <br />
-          Our menu does not only consist of amazing burgers but other grilled plates and seasonal specials. We also provide many tasty options for vegetarians, including burgers, side dishes and seasonal specials. At ASADO our side dishes are just as important as the main dishes and they will really blow you away with some of the most banging chips, wings, salads, slaws and desserts you will ever try. 
-          <br />
-          <br />
-          Our drinks menu will also be locally sourced where ever possible and we have an amazing classic and seasonal cocktail menu.  
-          <br />
-          <br />
-          The beats are played from a custom-made, just for us, stereo-system made by the amazing Bristol speaker company Mini Rig. We will be playing a mixture of old school hiphop, funk, Bristol bass music and latin beats. 
-          <br />
-          <br />
-          Our menu is available for eat in or take out. . .</p>
-          <br />
-          <br />
       </div>
-    </div>
+      <div className="about-wrapper">
+        <div className="text-box">
+          <p>
+            <br />
+            Cooking over a wood fired asado grill and using the highest quality, locally sourced ingredients.
+            <br />
+            <br />
+            At ASADO we are creating one of the tastiest burgers you have ever eaten using South American, Southern American and British flavours. We are open from 12pm to eat-in or takeaway.  
+          </p>
+        </div>
+      </div>
+      <div>
 
-    <div className="color-strip"></div>
-  </Layout>
+
+
+
+      <div className="menu-section-wrapper"  id="menu">
+        <div className="menu-title">
+          <h1>Menu Board</h1>
+        </div>
+
+        <div className="menu-items-wrapper">
+          <div className="menu-items-container">
+            
+
+            <div className="menu-item-box">
+              <div className="menu-text-box">
+                <h2>Asado  Burger</h2>
+                <h3>dbl 14 | SGL 10 | add bacon + 1</h3>
+                <p>Oak grilled dry aged beef patty, West Country cheddar cheese, chimichurri, confit garlic mayo, natural ketchup, pickled red onions & lettuce.</p>
+              </div>
+            </div>
+
+            <div className="menu-item-box">
+              <div className="menu-text-box">
+              <h2>El Don</h2>
+              <h3>​dbl 17 | sgl 13 | add bacon + 1</h3>
+              <p>Oak grilled dry-aged beef patty, West Country cheddar cheese, smoky dry-aged shredded beef, bacon and onion stew, confit garlic mayo, ketchup and lettuce.</p>
+              </div>
+            </div>
+
+            <div className="menu-item-box">
+              <div className="menu-text-box">
+              <h2>Pollo Libre</h2>
+              <h3>12 | add bacon + 1</h3>
+              <p>Free-range fried buttermilk chicken thigh with chunky guacamole, chipotle mayo & lettuce.</p>
+              </div>
+            </div>
+
+            <div className="menu-item-box">
+              <div className="menu-text-box">
+              <h2>Veggie or Vegan Asado burger</h2>
+              <h3>​DBL 17  | SGL 12 (VG) (V)</h3>
+              <p>Beyond meat beef patty, West Country cheddar cheese, chimichurri, confit garlic mayo, natural ketchup, pickled red onions and  lettuce.
+              <br />
+              <br />
+              *Available as Vegan or Veggie. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+
+      <div className="contact-section" id="contact">
+        <div className="contact-info-container">
+
+          <div className="contact-info-box">
+            <h3>Asado Barcelona</h3>
+            <p>Passatge de Lluís Pellicer, 12, 08036 Barcelona, Spain</p>
+          </div>
+
+          <div className="contact-info-box">
+            <h3>Telephone</h3>
+            <p>Passatge de Lluís Pellicer, 12, 08036 Barcelona, Spain</p>
+          </div>
+
+          <div className="contact-info-box">
+            <h3>Contact Info</h3>
+            <p>01999 288 477
+              <br/>
+              info@asadobarcelona.es
+            </p>
+            
+          </div>
+
+        </div>
+      </div>
+      
+      <div className="color-strip-green-layout"></div>
+    </Layout>
+  </div>
 )
 
 export default IndexPage
