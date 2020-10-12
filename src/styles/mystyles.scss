@@ -25,30 +25,13 @@
   background-color: transparent !important;
   color: #ffffff !important;
 }
-.navbar-dropdown {
-  
-}
 
 .center-text {
   text-align: center;
 }
-.dark-scrollbar {
-  scrollbar-color: dark;
-}
 
-@media only screen and (max-width: 1023px) {
-  .nav-dropdown-container {
-    padding-top: 0.4rem !important;
-    margin-bottom: -0.6rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .navbar-dropdown {
-    a {
-      font-size: 1.5rem;
-    }
-  }
-}
+
+
 
 /*
 
@@ -72,13 +55,16 @@ Gold - #fcb632
 Dark Blue - #02223b
 
 */
-$body-overflow-y: auto;
+//$body-overflow-y: auto;
 $navbar-background-color: #024443;
 $navbar-burger-color: #ffffff;
 $navbar-item-color: #ffffff;
 $navbar-dropdown-background-color: #fcb632; 
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-item-hover-background-color: transparent;
 $navbar-dropdown-border-top: none;
 $navbar-height: 8rem;
+$navbar-dropdown-arrow: #fcb632; 
 
 // Import Bulma core
 @import "~bulma/bulma.sass";

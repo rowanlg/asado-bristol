@@ -1,19 +1,14 @@
 import React from "react"
 import "../styles/mystyles.scss"
 import "../styles/header.scss"
-import styled from "styled-components"
 import asadoLogo from "../images/asado-logo.png"
-
 
 
 const Header = () => {
   const [isActive, setisActive] = React.useState(false)
   return (
-    <div className='nav-container'>
-      <div className='navbar nav-main' role='navigation' aria-label='main navigation'>
+      <div className='navbar is-fixed-top nav-main' role='navigation' aria-label='main navigation'>
         <nav className='navbar-brand'>
-          <a href='/' className='navbar-item'>
-          </a>
           <a
             onClick={() => {
               setisActive(!isActive)
@@ -32,6 +27,7 @@ const Header = () => {
           <a className='nav-image-container' href='/'>
             <img
             src={asadoLogo} 
+            alt="asado logo"
             />
           </a>
 
@@ -41,13 +37,14 @@ const Header = () => {
         <div className='navbar-start start-end-define-left'>
           <div className='navbar-item flex-cont'>
 
+          <a href='#about' className='navbar-item nav-link-start'>
+              About
+            </a>
+
           <a href='#menu' className='navbar-item nav-link-start'>            
                 Menu
             </a>
 
-            <a href='#about' className='navbar-item nav-link-start'>
-              About
-            </a>
           </div>
         </div>
         <div className='navbar-end start-end-define-right'>
@@ -55,17 +52,17 @@ const Header = () => {
           <div className='navbar-item flex-cont'>
 
             <div class="navbar-item has-dropdown is-hoverable nav-dropdown-container">
-                <a class="navbar-link nav-dropdown-link">
+                <a class="navbar-item nav-dropdown-link" id="order-menu-item">
                   Order
                 </a>
                 <div class="navbar-dropdown">
-                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" class="navbar-item asado-regular-nav">
+                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
                     Click and Collect
                   </a>
-                  <a href="https://www.ubereats.com/gb/bristol/food-delivery/asado/V76UJ3Z-RSaq2J4Xrzs6mg" target="_blank" class="navbar-item asado-regular-nav">
+                  <a href="https://www.ubereats.com/gb/bristol/food-delivery/asado/V76UJ3Z-RSaq2J4Xrzs6mg" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
                     Delivery
                   </a>
-                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" class="navbar-item asado-regular-nav">
+                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
                     Merch
                   </a>
                 </div>
@@ -79,12 +76,6 @@ const Header = () => {
       </div>
 
     </div>
-  
-
-   
-  </div>
-    
-
   )
 }
 

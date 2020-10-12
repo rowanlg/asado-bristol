@@ -1,0 +1,18 @@
+
+.screen-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0px;
+  height: auto;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.content {
+  z-index: 1;
+}
+
+.background-slider {
+  z-index: -1;
+}
