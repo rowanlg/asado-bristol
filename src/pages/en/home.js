@@ -44,6 +44,7 @@ const HomePage = () => (
               <img 
                 src={asadoMapPin}
                 alt="asado on the map"
+                className="map-pin-image"
               />
             </div>
 
