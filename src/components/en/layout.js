@@ -1,6 +1,6 @@
 import React from "react"
-import "../styles/mystyles.scss"
-import "../styles/layout.scss"
+import "../../styles/mystyles.scss"
+import "../../styles/layout.scss"
 import Header from "./header"
 import ImageSliderHero from "./imagesliderhero"
 

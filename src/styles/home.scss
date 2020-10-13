@@ -20,14 +20,28 @@
 
 .color-strip-gold-layout {
   width: 100vw;
-  height: 15vh;
+  height: auto;
   background-color: #fcb632;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-margin-top: 8rem;
-  
+
+  h1 {
+    font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 5rem;
+      //text-shadow: 3px 2px 0px #fcb632;
+      margin-top: 10rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+
+      @media only screen and (max-width: 430px) {
+        font-size: 4rem;
+        margin-top: 6rem;
+      }
+  }
+
   h2 {
     font-family: asado-bold;
     color: #fffaf1;
@@ -49,11 +63,11 @@
     }
     @media only screen and (min-width: 1024px) {
       font-size: 3.5rem;
-    padding-top: 2.6rem;
+      padding-top: 2.6rem;
     }
     @media only screen and (min-width: 1297px) {
       font-size: 4rem;
-    padding-top: 3rem;
+      padding-top: 3rem;
     }
   }
 }
@@ -80,7 +94,7 @@
     width: 80%;
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 
     h2 {
       font-family: asado-bold;
@@ -93,61 +107,103 @@
       font-size: 1.8rem;
 
       @media only screen and (max-width: 1297px) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
       @media only screen and (max-width: 1023px) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
       @media only screen and (max-width: 767px) {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
     }
   }
 }
 
-
-
-.contact-section {
-  width: 100%;
+.contact-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fcb632;
-  scroll-margin-top: 8rem;
+  
+  h1 {
+    font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 5rem;
+      //text-shadow: 3px 2px 0px #fcb632;
+      margin-top: 8rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+      
+
+      @media only screen and (max-width: 430px) {
+        font-size: 4rem;
+        margin-top: 6rem;
+      }
+  }
 }
 
+
 .contact-info-container {
-  width: 90%;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 5rem 0;
+  padding: 5px;
+  margin-bottom: 20%;
+  border: solid #fffaf1 2px;
+  -webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  background-color: #024443;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #024443;
 }
 
 .contact-info-box {
-  width: 30rem;
-  padding: 5%;
-  margin: 5rem 0;
+  width: 20rem;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20rem;
+  
 
   h2 {
     font-family: asado-bold;
     color: #fffaf1;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
-    margin-top: 1rem;
-    margin-bottom: -1.5rem;
   }
   h3 {
     font-family: asado-bold;
     color: #fffaf1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
   }
   p {
     font-family: asado-regular;
     color: #fffaf1;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
     
+  }
+
+  &.left {
+    @media only screen and (min-width: 818px) and (max-width: 1217px) {
+      order: 1;
+    }
+  }
+  &.middle {
+    @media only screen and (min-width: 818px) and (max-width: 1217px) {
+      order: 3;
+    }
+  }
+  &.right {
+    @media only screen and (min-width: 818px) and (max-width: 1217px) {
+      order: 2;
+    }
   }
 }

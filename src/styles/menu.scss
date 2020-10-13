@@ -39,6 +39,7 @@
 
       @media only screen and (max-width: 430px) {
         font-size: 4rem;
+        margin-top: 6rem;
       }
   }
 }
@@ -88,22 +89,46 @@
     h2 {
       font-family: asado-bold;
       color: #fffaf1;
-      font-size: 3rem;
       text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
       margin-top: 1rem;
       margin-bottom: -1.5rem;
+      @media only screen and (max-width: 402px){
+        font-size: 2.5rem;
+      }
+      @media only screen and (min-width: 403px){
+        font-size: 2.8rem;
+      }
+      @media only screen and (min-width: 475px){
+        font-size: 3rem;
+      }
     }
     h3 {
       font-family: asado-bold;
       color: #fffaf1;
-      font-size: 2rem;
       text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+      @media only screen and (max-width: 402px){
+        font-size: 1.5rem;
+      }
+      @media only screen and (min-width: 403px){
+        font-size: 1.7rem;
+      }
+      @media only screen and (min-width: 475px){
+        font-size: 2rem;
+      }
     }
     p {
       font-family: asado-regular;
       color: #fffaf1;
-      font-size: 1.8rem;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+      @media only screen and (max-width: 402px){
+        font-size: 1.3rem;
+      }
+      @media only screen and (min-width: 403px){
+        font-size: 1.6rem;
+      }
+      @media only screen and (min-width: 475px){
+        font-size: 1.8rem;
+      }
     }
   }
 }

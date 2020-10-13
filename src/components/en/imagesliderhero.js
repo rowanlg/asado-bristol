@@ -1,7 +1,7 @@
 import React from "react"
-import "../styles/imagesliderhero.scss"
-import bg from "../images/bg.jpg"
-import bg2 from "../images/bg2.jpg"
+import "../../styles/imagesliderhero.scss"
+import bg from "../../images/bg.jpg"
+import bg2 from "../../images/bg2.jpg"
 import BackgroundSlider from "react-background-slider"
 
 

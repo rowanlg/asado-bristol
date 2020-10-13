@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../styles/mystyles.scss"
-import "../styles/header.scss"
-import asadoLogo from "../images/asado-logo.png"
+import "../../styles/mystyles.scss"
+import "../../styles/header.scss"
+import asadoLogo from "../../images/asado-logo.png"
 
 
 const Header = () => {
@@ -39,11 +39,11 @@ const Header = () => {
         <div className='navbar-start start-end-define-left'>
           <div className='navbar-item flex-cont'>
 
-          <Link to='/#about' className='navbar-item nav-link-start first-item'>
+          <Link to='/en/home/#about' className='navbar-item nav-link-start first-item'>
               About
             </Link>
 
-          <Link to='/#menu' className='navbar-item nav-link-start'>            
+          <Link to='/en/home/#menu' className='navbar-item nav-link-start'>            
                 Menu
             </Link>
 
@@ -70,7 +70,7 @@ const Header = () => {
                 </div>
               </div>
   
-            <Link to="/#contact" className='navbar-item nav-link-end last-item'>
+            <Link to="/en/home/#contact" className='navbar-item nav-link-end last-item'>
               Contact
             </Link>
           </div>
