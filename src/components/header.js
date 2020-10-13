@@ -39,7 +39,7 @@ const Header = () => {
         <div className='navbar-start start-end-define-left'>
           <div className='navbar-item flex-cont'>
 
-          <Link to='/#about' className='navbar-item nav-link-start'>
+          <Link to='/#about' className='navbar-item nav-link-start first-item'>
               About
             </Link>
 
@@ -70,7 +70,7 @@ const Header = () => {
                 </div>
               </div>
   
-            <Link to="/#contact" className='navbar-item nav-link-end'>
+            <Link to="/#contact" className='navbar-item nav-link-end last-item'>
               Contact
             </Link>
           </div>

@@ -1,153 +1,155 @@
+/*
 
-@font-face {
-  font-family: "asado-regular";
-  src: url("../fonts/asado-regular-text.otf");
+Asado Colours
+
+Off White - #fffaf1
+Green - #024443
+Gold - #fcb632
+Dark Blue - #02223b
+
+
+@keyframes colorBackground {
+  0% {background-color: #fcb632;}
+  40% {background-color: #fcb632;}
+  100% {background-color: transparent;display: none;}
+}
+*/
+
+@keyframes colorBackground {
+  0% {transform: translate(0px, 0px);}
+  40% {transform: translate(0px, 0px);}
+  100% {transform: translate(0px, -2000px);}
 }
 
-@font-face {
-  font-family: "asado-bold";
-  src: url("../fonts/asado-bold-text.otf");
-}
-
-@font-face {
-  font-family: "asado-body";
-  src: url("../fonts/asado-body-text.ttf");
-}
-
-.master-wrapper {
-  scroll-margin-top: -10000rem;
-}
-
-.color-strip-gold-layout {
+.intro-wrapper {
   width: 100vw;
-  height: 15vh;
+  height: 100vh;
   background-color: #fcb632;
-  text-align: center;
+  position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  scroll-margin-top: 8rem;
   
-  h2 {
-    font-family: asado-bold;
-    color: #fffaf1;
-    text-align: center;
-    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
-    margin-right: 3%;
-
-    @media only screen and (max-width: 400px) {
-      font-size: 1.6rem;
-      padding-top: 1.3rem;
-    }
-    @media only screen and (min-width: 401px) {
-      font-size: 2rem;
-      padding-top: 1.6rem;
-    }
-    @media only screen and (min-width: 768px) {
-      font-size: 3rem;
-      padding-top: 2.2rem;
-    }
-    @media only screen and (min-width: 1024px) {
-      font-size: 3.5rem;
-    padding-top: 2.6rem;
-    }
-    @media only screen and (min-width: 1297px) {
-      font-size: 4rem;
-    padding-top: 3rem;
-    }
-  }
 }
 
-.color-strip-green-layout {
-  width: 100vw;
-  height: 15vh;
-  background-color: #024443;
-  text-align: center;
-  border-top: solid #fcb632;
-}
-
-.about-wrapper {
-  width: 100vw;
-  height: auto;
-
-  background-color: #024443;
+.asado-animation-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-  div.text-box {
-    width: 80%;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-    h2 {
-      font-family: asado-bold;
-      color: #fffaf1;
-      font-size: 3rem;
-    }
-    p {
-      font-family: asado-body;
-      color: #fffaf1;
-      font-size: 1.8rem;
-
-      @media only screen and (max-width: 1297px) {
-        font-size: 1.4rem;
-      }
-      @media only screen and (max-width: 1023px) {
-        font-size: 1.2rem;
-      }
-      @media only screen and (max-width: 767px) {
-        font-size: 0.8rem;
-      }
-    }
-  }
-}
-
-
-
-.contact-section {
   width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #024443;
+  animation-name: colorBackground;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 999;
+}
+
+.options-container {
+  position: absolute;
+  margin-left: -2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly; 
   align-items: center;
-  background-color: #fcb632;
-  scroll-margin-top: 8rem;
-}
-
-.contact-info-container {
-  width: 90%;
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 5rem 0;
+  border: solid white 2px;
+  -webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  background-color: #024443;
+  @media only screen and (min-width: 1231px) {
+    width: 30%;
+    height: 45%;
+  }
+  @media only screen and (max-width: 1230px) {
+    width: 40%;
+    height: 45%;
+  }
+  @media only screen and (max-width: 1023px) {
+    width: 50%;
+    height: 45%;
+  }
+  @media only screen and (max-width: 767px) {
+    width: 55%;
+    height: 40%;
+  }
+  @media only screen and (max-width: 549px) {
+    width: 65%;
+    height: 40%;
+  }
+  @media only screen and (max-width: 444px) {
+    width: 75%;
+    height: 40%;
+  }
+  @media only screen and (max-width: 379px) {
+    width: 80%;
+    height: 40%;
+  }
 }
 
-.contact-info-box {
-  width: 30rem;
-  padding: 5%;
-  margin: 5rem 0;
+.title-box {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -100px;
 
-  h2 {
-    font-family: asado-bold;
-    color: #fffaf1;
-    font-size: 3rem;
-    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
-    margin-top: 1rem;
-    margin-bottom: -1.5rem;
-  }
-  h3 {
+  h1 {
     font-family: asado-bold;
     color: #fffaf1;
     font-size: 2rem;
-    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.6);
+    margin-top: 1rem;
+    line-height: 70%;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 374px) {
+      font-size: 1.3rem;
+    }
   }
-  p {
-    font-family: asado-regular;
+}
+
+.option-box {
+  border: solid white 2px;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+  -webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  
+  @media only screen and (max-width: 767px) {
+    width: 8rem;
+  }
+  @media only screen and (max-width: 374px) {
+    width: 6rem;
+  }
+
+  h2 {
+    font-family: asado-bold;
     color: #fffaf1;
-    font-size: 1.8rem;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
-    
+    font-size: 2rem;
+    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 374px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.gold-box {
+  background-color: #02223b;
+  &:hover {
+    background-color: #fcb632;
+  }
+}
+.green-box {
+  background-color: #02223b;
+  &:hover {
+    background-color: #fcb632;
   }
 }

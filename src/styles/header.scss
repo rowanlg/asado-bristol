@@ -58,6 +58,18 @@
   }
 }
 
+.first-item {
+  @media only screen and (max-width: 1023px) {
+    margin-top: -1.8rem;
+  }
+}
+
+.last-item {
+  @media only screen and (max-width: 1023px) {
+    margin-bottom: -1.3rem;
+  }
+}
+
 
 .start-end-define-left { 
   margin-bottom: 1.3rem;
@@ -69,9 +81,10 @@
   }
   @media only screen and (max-width: 1023px) {
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 0.2rem;
   }
 }
+
 
 .nav-link-start {
   font-family: asado-regular;
@@ -103,8 +116,8 @@
   height: 100%;
 
   @media only screen and (max-width: 1023px) {
-    margin-top: -2.2rem;
-    margin-left: 1rem;
+    margin-top: -2.5rem;
+    margin-left: 0.2rem;
   }
   @media only screen and (min-width: 1024px) {
     margin-right: 12%;
