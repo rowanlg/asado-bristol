@@ -41,7 +41,7 @@ Dark Blue - #02223b
   text-align: center;
   background-color: #024443;
   animation-name: colorBackground;
-  animation-duration: 7s;
+  animation-duration: 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   z-index: 999;
@@ -49,15 +49,16 @@ Dark Blue - #02223b
 
 .options-container {
   position: absolute;
-  margin-left: -2%;
+  //margin-left: -2%;
   display: flex;
   justify-content: space-evenly; 
   align-items: center;
   flex-direction: column;
-  border: solid #fffaf1 2px;
-  -webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  //border: solid #fffaf1 2px;
+  //-webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  //-moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
+  //box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
   background-color: #024443;
   padding: 5px;
 
@@ -170,6 +171,7 @@ Dark Blue - #02223b
 
 .bristol-box {
   background-color: #02223b;
+  border-radius: 10px;
   &:hover {
     background-color: #fcb632;
   }
@@ -177,6 +179,7 @@ Dark Blue - #02223b
 
 .barca-box {
   background-color: #02223b;
+  border-radius: 10px;
   &:hover {
     background-color: #fcb632;
   }

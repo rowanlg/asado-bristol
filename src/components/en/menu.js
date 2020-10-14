@@ -8,7 +8,7 @@ const Menu = () => {
     <div className="menu-section-wrapper"  id="menu">
 
       <div className="menu-title">
-        <h1>Menu Board</h1>
+        <h1>Burgers</h1>
       </div>
 
       <div className="menu-items-wrapper">
@@ -50,9 +50,108 @@ const Menu = () => {
             </div>
           </div>
           
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>Kids Beef Burger</h2>
+            <h3>9 | add bacon + 1</h3>
+            <p>Kids beef burger with cheese, ketchup & lettuce with a small portion of chips.</p>
+            </div>
+          </div>
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>Kids Chicken burger</h2>
+            <h3>9 | add bacon + 1</h3>
+            <p>Kids chicken burger, confit garlic mayo & lettuce with a small portion of chips.</p>
+            </div>
+          </div>
 
         </div>
       </div>
+
+      <div className="menu-title">
+        <h1>Sides</h1>
+      </div>
+
+      <div className="menu-items-wrapper">
+        <div className="menu-items-container">
+          
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+              <h2>Espresso BBQ wings</h2>
+              <h3>4 wings x 7.50| 8x 13 | 12x 17 </h3>
+              <p>3 joint, free range, crispy wings in Extract espresso BBQ sauce.</p>
+            </div>
+          </div>
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>handcut Rosemary salt chipS</h2>
+            <h3>​3.50 (Vg)</h3>
+            </div>
+          </div>
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>IPA cheesy chipS</h2>
+            <h3>5.50 (V)</h3>
+            <p>Rosemary salt chip topped with  IPA cheddar cheese sauce.</p>
+            </div>
+          </div>
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>El Don cheesy chipS</h2>
+            <h3>​8.50 (V)</h3>
+            <p>Chips with El Don shredded beef & IPA cheese sauce.</p>
+            </div>
+          </div>
+          
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>morcilla balls</h2>
+            <h3>6.50</h3>
+            <p>(black pudding) with chimichurri mayo.</p>
+            </div>
+          </div>
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+            <h2>Pickled slaw</h2>
+            <h3>3.50 (V)</h3>
+            <p>Slaw with pickled stuff and house made dressing.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div className="menu-title">
+        <h1>Extras</h1>
+      </div>
+
+      <div className="menu-items-wrapper">
+        <div className="menu-items-container">
+          
+
+          <div className="menu-item-box">
+            <div className="menu-text-box">
+              
+              <h3>Add smoked streaky bacon 1  | extra patty 4 | Extra cheese 1</h3>
+              <h3></h3>
+              <h3>Dips <br />
+              Confit garlic mayo, Chipotle mayo,  Espresso BBQ sauce, Chimichurri Guacamole 2.50 </h3>
+
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+
     </div>
  
   )
