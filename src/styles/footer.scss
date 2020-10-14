@@ -1,0 +1,111 @@
+
+@font-face {
+  font-family: "asado-regular";
+  src: url("../fonts/asado-regular-text.otf");
+}
+
+@font-face {
+  font-family: "asado-bold";
+  src: url("../fonts/asado-bold-text.otf");
+}
+
+@font-face {
+  font-family: "asado-body";
+  src: url("../fonts/asado-body-text.ttf");
+}
+/*
+
+Asado Colours
+
+Off White - #fffaf1
+Green - #024443
+Gold - #fcb632
+Dark Blue - #02223b
+
+*/
+
+.footer-wrapper {
+  background-color: #024443;
+  height: 7rem;
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #fffaf1;
+    font-family: asado-regular;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 401px) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  h3 {
+    color: #fffaf1;
+    font-family: asado-regular;
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+    }
+    @media only screen and (min-width: 401px) {
+      font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.footer-item-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.hover {
+    &:hover {
+    transform: scale(1.2);
+    }
+  }
+
+}
+
+.footer-item-divider {
+  height: 60%;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: solid #fffaf1 2px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.insta-icon {
+  color: #fffaf1;
+  @media only screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (min-width: 401px) {
+    font-size: 1.7rem;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+}

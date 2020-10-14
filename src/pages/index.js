@@ -3,7 +3,7 @@ import "../styles/mystyles.scss"
 import "../styles/index.scss"
 import { Link } from "gatsby"
 import AnimatedLoad from "../components/animatedload"
-import asadoLogoText from "../images/asado-logo-text.png"
+import asadoLogoText from "../images/asado-logo-barcelona-2.png"
 
 const IndexPage = () => {
   return (
@@ -21,22 +21,28 @@ const IndexPage = () => {
           />
         </div>
         <div className="title-box">
-          <h1>Please choose a restaurant...</h1>
-          <h1>Elija un restaurante...</h1>
-          <h1>Escolliu un restaurant...</h1>
+          <h1>Please choose a language...</h1>
+          <h1>por favor elija un idioma...</h1>
+          <h1>Trieu un idioma...</h1>
         </div>
         
         <div className="option-box-container">
-          <Link to="http://www.asadobristol.com/" target="_blank">
-            <div className="option-box bristol-box">
-              <h2>Bristol</h2>
+          <Link to="/en/home" target="_blank">
+            <div className="option-box lang-box">
+              <h2>English</h2>
             </div>
           </Link>
-          <Link to="/en/home">
-          <div className="option-box barca-box">
-            <h2>Barcelona</h2>
+          <Link to="/">
+          <div className="option-box lang-box">
+            <h2>Español</h2>
           </div>
           </Link>
+          <Link to="/">
+          <div className="option-box lang-box">
+            <h2>Català</h2>
+          </div>
+          </Link>
+
         </div>
 
       </div>

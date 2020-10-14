@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../../styles/mystyles.scss"
 import "../../styles/header.scss"
-import asadoLogo from "../../images/asado-logo.png"
+import asadoLogo from "../../images/asado-logo-barcelona-2.png"
 
 
 const Header = () => {

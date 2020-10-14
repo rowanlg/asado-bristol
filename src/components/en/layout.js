@@ -2,6 +2,7 @@ import React from "react"
 import "../../styles/mystyles.scss"
 import "../../styles/layout.scss"
 import Header from "./header"
+import Footer from "./footer"
 import ImageSliderHero from "./imagesliderhero"
 
 
@@ -19,6 +20,7 @@ const Layout = ({children}) => {
       <div className="content">
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

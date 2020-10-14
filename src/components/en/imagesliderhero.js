@@ -12,12 +12,12 @@ const ImageSliderHero = () => {
       <BackgroundSlider 
       images={[bg, bg2]}
       duration={10} transition={1}/>
-      <div className="title-container">
+      {/*<div className="title-container">
         <h1>Local Ingredients,
           <br />
           World Flavours.
         </h1>
-      </div>
+      </div>*/}
     </div>
     
   )
