@@ -44,11 +44,11 @@
   //border-top: solid #fcb632;
   //border-bottom: solid #fcb632;
   text-shadow: 2.5px 2px 0px rgba(0, 0, 0, 0.6);
-  overflow: hidden !important; 
+  
 
   @media only screen and (max-width: 1023px){
     background: linear-gradient(180deg, #024443  0%, #024443  5%, #fcb632 100%);
-    
+    overflow: hidden !important; 
   }
 }
 
@@ -58,8 +58,6 @@
   top: 0.8rem;
   margin-left: -3rem;
   width: 6rem;
-  
-  
 
   img {
     width: auto;
@@ -112,9 +110,15 @@
   }
 
   @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-    padding-top: 2.8rem;
+    font-size: 1.7rem;
+    padding-top: 3rem;
     padding-bottom: 2.2rem;
+  }
+  @media only screen and (min-width: 1350px) {
+    font-size: 1.9rem;
+  }
+  @media only screen and (min-width: 1600px) {
+    font-size: 2rem;
   }
 }
 
@@ -149,8 +153,14 @@
   }
 
   @media only screen and (min-width: 1024px) {
-    padding-top: 2.8rem;
+    padding-top: 3rem;
     padding-bottom: 2.2rem;
+    font-size: 1.7rem;
+  }
+  @media only screen and (min-width: 1350px) {
+    font-size: 1.9rem;
+  }
+  @media only screen and (min-width: 1600px) {
     font-size: 2rem;
   }
   @media only screen and (max-width: 1023px) {
@@ -183,11 +193,18 @@
     background-color: transparent !important;
     text-decoration: underline;
   }
+
   
   @media only screen and (min-width: 1024px) {
-    font-size: 2rem;
-    padding-top: 2.8rem;
+    font-size: 1.7rem;
+    padding-top: 3rem;
     padding-bottom: 2.2rem;
+  }
+  @media only screen and (min-width: 1350px) {
+    font-size: 1.9rem;
+  }
+  @media only screen and (min-width: 1600px) {
+    font-size: 2rem;
   }
   @media only screen and (max-width: 1023px) {
     padding-left: 0.8rem;
