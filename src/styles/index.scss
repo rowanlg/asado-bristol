@@ -55,7 +55,7 @@ Dark Blue - #02223b
   align-items: center;
   flex-direction: column;
   border-radius: 50px;
-  border: solid #fffaf1 5px;
+  //border: solid #fffaf1 3px;
   //-webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
   //-moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
   //box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
@@ -126,20 +126,17 @@ Dark Blue - #02223b
 }
 
 .option-box-container {
-  //border: solid;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 5px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .option-box {
   border: solid #fffaf1 3px;
-  padding: 1rem;
-  padding-top: 1.3rem;
-  width: auto;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -147,24 +144,49 @@ Dark Blue - #02223b
   -webkit-box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
   box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
-  height: 50%;
-  margin-top: 2%;
-  
+  margin-bottom: 0.5rem;
 
+  @media only screen and (max-width: 369px) {
+    width: 4.5rem;
+    height: 2.5rem;
+    padding-top: 0.4rem;
+  }
+  @media only screen and (min-width: 370px) {
+    width: 5rem;
+    height: 3rem;
+    padding-top: 0.3rem;
+  }
+  @media only screen and (min-width: 594px) {
+    width: 5.5rem;
+    height: 3.2rem;
+    padding-top: 0.3rem;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 6.2rem;
+    height: 3.5rem;
+    padding-top: 0.3rem;
+  }
+  @media only screen and (min-width: 1231px) {
+    width: 7.2rem;
+    height: 3.8rem;
+    padding-top: 0.3rem;
+  }
 
   h2 {
     font-family: asado-bold;
     color: #fffaf1;
-    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.6);
-    margin-top: 3%;
-    padding: 5%;
-    @media only screen and (max-width: 593px) {
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+
+    @media only screen and (max-width: 369px) {
       font-size: 1.2rem;
+    }
+    @media only screen and (min-width: 370px) {
+      font-size: 1.4rem;
     }
     @media only screen and (min-width: 594px) {
       font-size: 1.5rem;
     }
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 768px) {
       font-size: 1.7rem;
     }
     @media only screen and (min-width: 1231px) {

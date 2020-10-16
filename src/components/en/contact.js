@@ -1,6 +1,6 @@
 import React from "react"
 import "../../styles/mystyles.scss"
-import "../../styles/home.scss"
+import "../../styles/contact.scss"
 import asadoMapPin from "../../images/asado-barca-map-pin.png"
 
 

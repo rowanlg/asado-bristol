@@ -45,20 +45,6 @@ Dark Blue - #02223b
     font-family: asado-regular;
 
     @media only screen and (max-width: 400px) {
-      font-size: 1.2rem;
-    }
-    @media only screen and (min-width: 401px) {
-      font-size: 1.4rem;
-    }
-    @media only screen and (min-width: 768px) {
-      font-size: 1.6rem;
-    }
-  }
-
-  h3 {
-    color: #fffaf1;
-    font-family: asado-regular;
-    @media only screen and (max-width: 400px) {
       font-size: 1rem;
     }
     @media only screen and (min-width: 401px) {
@@ -66,6 +52,20 @@ Dark Blue - #02223b
     }
     @media only screen and (min-width: 768px) {
       font-size: 1.4rem;
+    }
+  }
+
+  h3 {
+    color: #fffaf1;
+    font-family: asado-regular;
+    @media only screen and (max-width: 400px) {
+      font-size: 0.8rem;
+    }
+    @media only screen and (min-width: 401px) {
+      font-size: 1rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 1.2rem;
     }
   }
 }
@@ -76,8 +76,21 @@ Dark Blue - #02223b
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 8rem;
+
+
+
+  @media only screen and (max-width: 767px) {
+    width: 6rem;
+  }
 
   &.hover {
+    @media only screen and (max-width: 400px) {
+      width: 4rem;
+    }
+    @media only screen and (min-width: 401px) {
+      width: 6rem;
+    }
     &:hover {
     transform: scale(1.2);
     }
@@ -92,7 +105,7 @@ Dark Blue - #02223b
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-left: solid #fffaf1 2px;
+  border: solid #fffaf1 1px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -107,5 +120,29 @@ Dark Blue - #02223b
   }
   @media only screen and (min-width: 768px) {
     font-size: 1.9rem;
+  }
+}
+
+.up-to-top {
+  color: #fffaf1;
+  position: absolute;
+  font-size: 1.2rem;
+
+  @media only screen and (max-width: 529px) {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0.8rem;
+  }
+  @media only screen and (min-width: 530px) {
+    right: 5%;
+    bottom: 2rem;
+  }
+
+
+  &:hover {
+    @media only screen and (min-width: 530px) {
+      transform: scale(1.5);
+    }
   }
 }

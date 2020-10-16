@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../../styles/mystyles.scss"
 import "../../styles/footer.scss"
-import { FaInstagram } from "react-icons/fa"
+import { FaInstagram, FaChevronUp } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -30,6 +30,10 @@ const Footer = () => {
           </div>
         </Link>
         
+        <a href="#top-of-page">
+          <FaChevronUp className="up-to-top" />
+        </a>
+
       </div>
     </div>
   )

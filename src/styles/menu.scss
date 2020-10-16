@@ -35,7 +35,7 @@
     font-family: asado-bold;
       color: #fffaf1;
       font-size: 5rem;
-      //text-shadow: 3px 2px 0px #fcb632;
+      text-shadow: 6px 4px 0px #024443;
       //margin-top: 10rem;
 
       @media only screen and (max-width: 430px) {
@@ -82,6 +82,12 @@
     -webkit-box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
     box-shadow: 8px 7px 0px -2px rgba(255, 255, 255, 0.75);
+
+    @media only screen and (min-width: 1222px) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
     
     @media only screen and (max-width: 497px) {
       width: 100%;
