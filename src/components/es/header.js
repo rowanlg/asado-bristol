@@ -39,12 +39,12 @@ const Header = () => {
         <div className='navbar-start start-end-define-left'>
           <div className='navbar-item flex-cont'>
 
-          <Link to='/en/home/#about' className='navbar-item nav-link-start first-item'>
-              About
+          <Link to='/es/home/#about' className='navbar-item nav-link-start first-item'>
+              información
             </Link>
 
-          <Link to='/en/home/#menu' className='navbar-item nav-link-start'>            
-                Menu
+          <Link to='/es/home/#menu' className='navbar-item nav-link-start'>            
+              menú
             </Link>
 
           </div>
@@ -58,27 +58,21 @@ const Header = () => {
                   Order
                 </a>
                 <div class="navbar-dropdown">
-                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
-                    Click and Collect
-                  </a>
-                  <a href="https://www.ubereats.com/gb/bristol/food-delivery/asado/V76UJ3Z-RSaq2J4Xrzs6mg" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
-                    Delivery
-                  </a>
-                  <a href="https://pickup.deliverect.com/asado/en/order/" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
-                    Merch
+                  <a href="https://www.ubereats.com/barcelona/food-delivery/asado-burger/XXyA6teISKeaOd0x5tBX5Q?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNhcnJlciUyMGRlJTIwU2FndSVDMyVBOXMlMkMlMjAyNyUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpEelBpS0hhWXBCSVJjN2ZmQkt1dHVZSSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MS4zOTQzMTQ4NjExMzMwMiUyQyUyMmxvbmdpdHVkZSUyMiUzQTIuMTQ0ODY4ODQ2MTY4NjElN0Q%3D&utm_source=wok" target="_blank" rel="noreferrer" class="navbar-item asado-regular-nav">
+                    Domicilio
                   </a>
                 </div>
               </div>
   
-            <Link to="/en/home/#contact" className='navbar-item nav-link-end last-item'>
-              Contact
+            <Link to="/es/home/#contact" className='navbar-item nav-link-end last-item'>
+              Contacto
             </Link>
           </div>
         </div>
       </div>
 
     </div>
-    <div className="color-strip-gold-header-announcement-bar"><h3>- Half price off with Uber code: UBEREATS50 -</h3></div>
+    <div className="color-strip-gold-header-announcement-bar"><h3></h3></div>
     </div>
   )
 }

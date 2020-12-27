@@ -12,13 +12,14 @@ const Footer = () => {
           <div className="footer-item-container hover">
             <FaInstagram className="insta-icon" />
             <h3>@asadobcn</h3>
+            <h3>Barcelona</h3>
           </div>
         </Link>
 
         <div className="footer-item-divider"></div>
 
         <div className="footer-item-container">
-        <a href="tel:123-456-7890"><h2>0119 999 888</h2></a>
+          <a href="tel:+34934196590"><h2>+34 934 19 65 90</h2></a>
         </div>
 
         <div className="footer-item-divider"></div>
@@ -26,7 +27,9 @@ const Footer = () => {
         <Link to="https://www.instagram.com/asadoburgers/" target="_blank">
           <div className="footer-item-container hover">
             <FaInstagram className="insta-icon" />
+            
             <h3>@asadoburgers</h3>
+            <h3>Bristol</h3>
           </div>
         </Link>
         

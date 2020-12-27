@@ -1,51 +1,44 @@
 import React from "react"
 import "../styles/mystyles.scss"
 import "../styles/index.scss"
-import { Link } from "gatsby"
 import AnimatedLoad from "../components/animatedload"
-import asadoLogoText from "../images/asado-logo-barcelona-2.png"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Menu from "../components/menu"
+import Contact from "../components/contact"
 
 const IndexPage = () => {
   return (
-    <div className="intro-wrapper">
+    <div className="index-wrapper">
+      
+      
       <div className="asado-animation-container"> 
         <AnimatedLoad />
       </div>
+      
 
-      <div className="options-container">
-        <div className="logo-box">
-          <img 
-            src={asadoLogoText}
-            alt="Asado Logo"
-            className="asado-logo-text"
-          />
-        </div>
-        <div className="title-box">
-          <h1>Please choose a language...</h1>
-          <h1>por favor elija un idioma...</h1>
-          <h1>Trieu un idioma...</h1>
-        </div>
-        
-        <div className="option-box-container">
-          <Link to="/en/home" target="_blank">
-            <div className="option-box lang-box">
-              <h2>English</h2>
-            </div>
-          </Link>
-          <Link to="/">
-          <div className="option-box lang-box">
-            <h2>Español</h2>
-          </div>
-          </Link>
-          <Link to="/">
-          <div className="option-box lang-box">
-            <h2>Català</h2>
-          </div>
-          </Link>
-
-        </div>
-
+      <Layout>
+      <SEO title="Home" />
+      
+      <div className="color-strip-gold-layout" id="about">
+        <h2>ASADO meaning barbecue in Spanish </h2>
       </div>
+      <div className="about-wrapper">
+        <div className="text-box">
+          <p>
+            <br />
+            Cooking over a wood fired asado grill and using the highest quality, locally sourced ingredients.
+            <br />
+            <br />
+            At ASADO we are creating one of the tastiest burgers you have ever eaten using South American, Southern American and British flavours. We are open from 12pm to eat-in or takeaway.  
+          </p>
+        </div>
+      </div>
+      
+
+      <Contact />
+
+    </Layout>
 
     </div>
   )

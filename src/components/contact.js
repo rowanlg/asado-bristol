@@ -1,7 +1,7 @@
 import React from "react"
-import "../../styles/mystyles.scss"
-import "../../styles/contact.scss"
-import asadoMapPin from "../../images/asado-barca-map-pin.png"
+import "../styles/mystyles.scss"
+import "../styles/contact.scss"
+import asadoMapPin from "../images/asado-barca-map-pin.png"
 
 
 const Contact = () => (

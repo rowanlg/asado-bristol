@@ -53,11 +53,12 @@
 }
 
 .nav-image-container {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 0.8rem;
   margin-left: -3rem;
   width: 6rem;
+  z-index: 2 !important;
 
   img {
     width: auto;

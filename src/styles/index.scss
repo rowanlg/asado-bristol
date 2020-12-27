@@ -15,27 +15,40 @@ Dark Blue - #02223b
 }
 */
 
+
+@font-face {
+  font-family: "asado-regular";
+  src: url("../fonts/asado-regular-text.otf");
+}
+
+@font-face {
+  font-family: "asado-bold";
+  src: url("../fonts/asado-bold-text.otf");
+}
+
+@font-face {
+  font-family: "asado-body";
+  src: url("../fonts/asado-body-text.ttf");
+}
+
+
 @keyframes colorBackground {
   0% {transform: translate(0px, 0px);}
   40% {transform: translate(0px, 0px);}
   100% {transform: translate(0px, -6000px);}
 }
 
-.intro-wrapper {
+.index-wrapper {
   width: 100vw;
   height: 100vh;
   background-color: #fcb632;
-  position: absolute;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
   
 }
 
+
 .asado-animation-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -45,162 +58,112 @@ Dark Blue - #02223b
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   z-index: 999;
-}
-
-.options-container {
-  position: absolute;
-  //margin-left: -2%;
-  display: flex;
-  justify-content: space-evenly; 
-  align-items: center;
-  flex-direction: column;
-  border-radius: 50px;
-  //border: solid #fffaf1 3px;
-  //-webkit-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
-  //-moz-box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
-  //box-shadow: 8px 7px 0px -2px rgba(0, 0, 0, 0.6);
-  background-color: #024443;
-  padding: 5px;
-
-  @media only screen and (min-width: 1231px) {
-    width: 35%;
-  }
-  @media only screen and (max-width: 1230px) {
-    width: 40%;
-  }
-  @media only screen and (max-width: 1023px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 767px) {
-    width: 55%;
-  }
-  @media only screen and (max-width: 549px) {
-    width: 65%;
-  }
-  @media only screen and (max-width: 444px) {
-    width: 75%;
-  }
-  @media only screen and (max-width: 379px) {
-    width: 80%;
-  }
+  //border: solid white;
 }
 
 
 
-.logo-box {
-  width: 100%;
+.color-strip-gold-layout {
+  width: 100vw;
+  height: auto;
+  background-color: #fcb632;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  //border: solid;
-  margin: 5px;
-}
-
-.asado-logo-text {
-  width: 60%;
-  padding-top: 2.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.title-box {
-  width: 100%;
-  text-align: center;
-  //border: solid;
-  margin: 5px;
+  scroll-margin-top: 8rem;
 
   h1 {
     font-family: asado-bold;
-    color: #fffaf1;
-    font-size: 2rem;
-    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.6);
-    line-height: 95%;
+      color: #fffaf1;
+      font-size: 5rem;
+      //text-shadow: 3px 2px 0px #fcb632;
+      margin-top: 10rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
 
-    @media only screen and (max-width: 767px) {
-      font-size: 1.5rem;
-    }
-    @media only screen and (max-width: 374px) {
-      font-size: 1.3rem;
-    }
-  }
-}
-
-.option-box-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 5px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.option-box {
-  border: solid #fffaf1 3px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  -webkit-box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 6px 5px 0px -2px rgba(0, 0, 0, 0.6);
-  margin-bottom: 0.5rem;
-
-  @media only screen and (max-width: 369px) {
-    width: 4.5rem;
-    height: 2.5rem;
-    padding-top: 0.4rem;
-  }
-  @media only screen and (min-width: 370px) {
-    width: 5rem;
-    height: 3rem;
-    padding-top: 0.3rem;
-  }
-  @media only screen and (min-width: 594px) {
-    width: 5.5rem;
-    height: 3.2rem;
-    padding-top: 0.3rem;
-  }
-  @media only screen and (min-width: 768px) {
-    width: 6.2rem;
-    height: 3.5rem;
-    padding-top: 0.3rem;
-  }
-  @media only screen and (min-width: 1231px) {
-    width: 7.2rem;
-    height: 3.8rem;
-    padding-top: 0.3rem;
+      @media only screen and (max-width: 430px) {
+        font-size: 4rem;
+        margin-top: 6rem;
+      }
   }
 
   h2 {
     font-family: asado-bold;
     color: #fffaf1;
-    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
+    text-align: center;
 
-    @media only screen and (max-width: 369px) {
-      font-size: 1.2rem;
+    margin-right: 3%;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1.6rem;
+      padding-top: 1.3rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
     }
-    @media only screen and (min-width: 370px) {
-      font-size: 1.4rem;
-    }
-    @media only screen and (min-width: 594px) {
-      font-size: 1.5rem;
+    @media only screen and (min-width: 401px) {
+      font-size: 2rem;
+      padding-top: 1.6rem;
+      text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.6);
     }
     @media only screen and (min-width: 768px) {
-      font-size: 1.7rem;
+      font-size: 3rem;
+      padding-top: 2.2rem;
+      text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.6);
     }
-    @media only screen and (min-width: 1231px) {
-      font-size: 2rem;
+    @media only screen and (min-width: 1024px) {
+      font-size: 3.5rem;
+      padding-top: 2.6rem;
     }
-
+    @media only screen and (min-width: 1297px) {
+      font-size: 4rem;
+      padding-top: 3rem;
+      text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.6);
+    }
   }
 }
 
-.lang-box {
-  background-color: #02223b;
-  border-radius: 10px;
-  &:hover {
-    background-color: #fcb632;
-  }
+.color-strip-green-layout {
+  width: 100vw;
+  height: 15vh;
+  background-color: #024443;
+  text-align: center;
+  border-top: solid #fcb632;
 }
 
+.about-wrapper {
+  width: 100vw;
+  height: auto;
+
+  background-color: #024443;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  div.text-box {
+    width: 80%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+    h2 {
+      font-family: asado-bold;
+      color: #fffaf1;
+      font-size: 3rem;
+    }
+    p {
+      font-family: asado-body;
+      color: #fffaf1;
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: 1297px) {
+        font-size: 1.6rem;
+      }
+      @media only screen and (max-width: 1023px) {
+        font-size: 1.4rem;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
